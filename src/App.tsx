@@ -106,7 +106,7 @@ export default function App() {
           <aside className="md:col-span-2 bg-white rounded-2xl shadow-sm border border-gray-200 p-6 h-fit">
             <h3 className="text-base font-semibold mb-3">How it works</h3>
             <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
-              <li>We parse your annual salary and compute federal income tax using the marginal brackets embedded in your original Python program.</li>
+              <li>We parse your annual salary and compute federal income tax using the marginal brackets embedded in a Python program.</li>
               <li>For each bracket, we tax only the portion of income that falls within that band.</li>
               <li>Your net income is <em>salary − federal tax</em>.</li>
               <li>We also show your effective rate (<em>tax ÷ salary</em>) and the marginal rate for your last dollar of income.</li>
@@ -130,17 +130,8 @@ export default function App() {
                   ))}
                 </tbody>
               </table>
-              <p className="text-xs text-gray-500 mt-3">Tip: These thresholds/rates were copied from the code you shared and may not match current IRS tables.</p>
             </div>
           </aside>
-        </section>
-
-        <section className="mt-10 bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
-          <h3 className="text-base font-semibold mb-3">Original Python vs this web app</h3>
-          <p className="text-sm text-gray-700">
-            Your loop had several early <code>break</code>s and a final branch that overtaxed incomes below the top bracket. This app keeps your exact brackets but fixes the
-            marginal math so results reflect standard progressive taxation for those thresholds.
-          </p>
         </section>
       </main>
 
