@@ -79,7 +79,7 @@ export default function App() {
                 Clear
               </button>
             </div>
-            <p className="text-sm text-gray-500 mt-3">This demo uses the exact marginal brackets & rates from your code. It’s for illustration only and not tax advice.</p>
+            <p className="text-sm text-gray-500 mt-3">This demo uses the exact marginal brackets & rates. It’s for illustration only and not tax advice.</p>
 
             <div className="mt-8 grid gap-4">
               <div className="flex items-center justify-between border rounded-xl p-4">
